@@ -1,0 +1,159 @@
+{
+  "Header": {
+    "title": "Welcome.",
+    "paragraph": "Hi! Im Juan, and this is my portfolio webside"
+  },
+  "About": {
+    "paragraph": "I am a 25-year-old Argentine from the city of San Luis. I am an electronic technician with knowledge of C and C++. After my academic training, I began my foray into the world of web development. Get started with CSS, HTML, and Bootstrap courses. Then continue with UX UI design, Figma, and layout development for web pages and applications. Finally, I took a full stack programming bootcamp, with more than 800 hours of programming and more than 4 projects carried out during the course",
+    "Why": [
+      "Good predisposition in lerning",
+      "Dedicated",
+      "Disposition in relocation if this is a requisit",
+      "Full time disposition"
+    ],
+    "Why2": [
+      "English speker",
+      "Team worker",
+      "Striving",
+      "Persistent"
+    ]
+  },
+  "Gallery": [
+    {
+      "title": "Web developer course",
+      "largeImage": "img/portfolio/1.png",
+      "smallImage": "img/portfolio/1.png",
+      "technology": "HTLM, CSS",
+      "description": "App made for test in HTML/CSS course. I learned how to create web pages and web applications using HTML and CSS."
+    },
+    
+    {
+      "title": "Bazar Landing",
+      "largeImage": "img/portfolio/2.png",
+      "smallImage": "img/portfolio/2.png",
+      "technology": "HTLM, CSS, Bootstrap",
+      "description": "Landing page created for a e-shop. I used Bootstrap to create a responsive landing page."
+    },
+    
+    {
+      "title": "Wheater App",
+      "largeImage": "img/portfolio/3.png",
+      "smallImage": "img/portfolio/3.png",
+      "url": "https://weather-api-three-orpin.vercel.app/",
+      "technology": "HTLM, CSS, JavaScript, Styled Components, React, Redux, Axios, Versel",
+      "description": "Weather app created using React, Redux, Axios, and Styled Components. I used the OpenWeather API to get the weather data."
+    },
+    
+    {
+      "title": "Find Movies App",
+      "largeImage": "img/portfolio/4.png",
+      "smallImage": "img/portfolio/4.png",
+      "url": "https://movies-finder-ten.vercel.app/",
+      "technology": "HTLM, CSS, JavaScript, Styled Components, React, Redux, Axios, Versel",
+      "description": "Movie finder app I created using React, Redux, Axios, and Styled Components. I used the MovieDB API to get the movie data."
+    },
+    
+    {
+      "title": "Web education courses",
+      "largeImage": "img/portfolio/5.png",
+      "smallImage": "img/portfolio/5.png",
+      "technology": "HTLM, CSS",
+      "description": "Course took in the university. I learned how to create web pages and web applications using HTML and CSS."
+    },
+    
+    {
+      "title": "Dog Breed App",
+      "largeImage": "img/portfolio/6.png",
+      "smallImage": "img/portfolio/6.png",
+      "url": "https://dog-api-front.vercel.app/",
+      "technology": "HTLM, CSS, JavaScript, Styled Components, React, Redux, Axios, Secualize, Postman, Postgres, Heroku, Versel",
+      "description": "Dog breed app created using React, Redux, Axios, and Styled Components. I used the Dog API to get the dog breed data."
+    },
+
+    {
+      "title": "Pioeral Coin",
+      "largeImage": "img/portfolio/7.png",
+      "smallImage": "img/portfolio/7.png",
+      "technology": "HTLM, CSS, JavaScript, Styled Components, React, Redux",
+      "description": "Landing created for a fictitious electronic currency using React, Redux, and Styled Components. I used the CoinMarketCap API to get the coin data."
+    }
+  ],
+
+  "Services": [
+    {
+      "icon": "React",
+      "name": "React",
+      "text": "React is an open source Javascript library designed to create user interfaces with the goal of making it easy to develop single-page applications."
+    },
+    {
+      "icon": "javascript",
+      "name": "JavaScript",
+      "text": "JavaScript is an interpreted programming language, a dialect of the ECMAScript standard. It is defined as object-oriented, prototype-based, imperative, weakly typed, and dynamic."
+    },
+    {
+      "icon": "SQL",
+      "name": "SQL",
+      "text": "SQL is a domain-specific language designed to administer and retrieve information from relational database management systems."
+    },
+    {
+      "icon": "node.js",
+      "name": "NodeJS",
+      "text": "Node.js is an open source, cross-platform runtime environment for the server layer based on the JavaScript programming language."
+    },
+    {
+      "icon": "HTML5",
+      "name": "HTML5",
+      "text": "HTML, short for HyperText Markup Language, refers to the markup language used to create web pages."
+    },
+    {
+      "icon": "CSS",
+      "name": "CSS",
+      "text": "CSS, in Spanish «Cascading Style Sheets», is a graphic design language to define and create the presentation of a structured document written in a markup language."
+    },
+    {
+      "icon": "Figma",
+      "name": "Figma",
+      "text": "Figma is a primarily web-based vector graphics editor and prototyping tool, with additional offline features enabled by desktop applications on macOS and Windows."
+    },
+    {
+      "icon": "Git",
+      "name": "GitHub",
+      "text": "GitHub is a way to host projects using the Git version control system. It is mainly used for creating source code for computer programs."
+    },
+    {
+      "icon": "Styled Components",
+      "name": "Styled Components",
+      "text": "Use the best bits of ES6 and CSS to style your apps without stress."
+    }
+  ],
+
+  "Contact": {
+    "address": "San Luis, Argentina",
+    "phone": "+54 9 266 4554548",
+    "email": "jmb972012@gmail.com",
+    "facebook": "https://www.facebook.com/profile.php?id=100008957589786",
+    "linkedin": "https://www.linkedin.com/in/juan-manuel-bascunan-3b0355169"
+  },
+  "Features": [
+    {
+      "img": "1",
+      "title": "Web maquetation",
+      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+    },
+    {
+      "img": "2",
+      "title": "E Commerce",
+      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+    },
+    {
+      "img": "3",
+      "title": "Clim App",
+      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+    },
+    {
+      "img": "4",
+      "title": "Movies App",
+      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+    }
+  ]
+}
