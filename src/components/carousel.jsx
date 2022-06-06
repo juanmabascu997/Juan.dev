@@ -59,7 +59,7 @@ export default Carousel;
 
 
 const Contanier = styled.div`
-    height: 100vh;   
+    height: 800px;   
     width: 100%;
     display: flex;
     flex-direction: column;
