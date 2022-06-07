@@ -73,7 +73,27 @@ const Card = styledComponents.div`
     font-size: 4.5rem;
     margin-top: 10px;
   }
-
+  @media (max-width: 1200px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+    color: #608AFD;
+    width: 40vw;
+    height: 100%;
+    h3 {
+      font-size: 1.7rem;
+      margin-bottom: 5px;
+    }
+    p {
+      display: none;
+    }
+    svg {
+      font-size: 4.5rem;
+      margin-top: 10px;
+    }
+  }
 `;
 
 const Row = styledComponents.div`
@@ -86,5 +106,14 @@ const Row = styledComponents.div`
   margin-top: 20px;
   margin-left: -20px;
   justify-content: space-around;
+  @media (max-width: 1200px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    color: #608AFD;
+    width: 100%;
+  }
 
 `;

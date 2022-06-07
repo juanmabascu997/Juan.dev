@@ -65,6 +65,14 @@ const Contanier = styled.div`
     flex-direction: column;
     background-color: #2d2d2d;
     border-radius: 2% 2% 0px 0px;
+    /* @media (max-width: 1203px) {
+      height: 100vh;
+      width: 100%;
+    } */
+    @media (max-width: 1200px) {
+        height: 100vh;
+        width: 100%;
+    }
 `
 
 const Slider = styled.div`
@@ -97,6 +105,11 @@ const Slider = styled.div`
             object-fit: cover;
             scroll-snap-align: center;
             transition: all 300ms;
+            @media (max-width: 1200px) {
+                height: 58vh;
+                width: 100vw;
+                object-fit: contain;
+            }
         }
         &:hover{
             img{
@@ -104,6 +117,7 @@ const Slider = styled.div`
             }
         }
     }
+
 
 `
 

@@ -42,6 +42,7 @@ const HeaderContainer = styledComponents.header`
     text-align: center;
     padding: 0;
     margin: 0;
+
   }
   .intro-text {
     display: flex;
@@ -58,6 +59,10 @@ const HeaderContainer = styledComponents.header`
       transition: 2s ease-in-out all;
       animation: shake 2s;
       animation-iteration-count: infinite;
+    }
+    @media (max-width: 1203px) {
+      height: 100vh;
+      width: 100%;
     }
   }
   .intro-text h1 {
