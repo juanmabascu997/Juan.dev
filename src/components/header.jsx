@@ -30,6 +30,9 @@ export const  Header = (props) => {
 }
 
 const HeaderContainer = styledComponents.header`
+  .intro-text a{
+    margin-bottom: 50px;
+  }
 
   .intro {
     background: url(../img/unsplash.jpg) no-repeat center center;
@@ -71,12 +74,20 @@ const HeaderContainer = styledComponents.header`
     margin-bottom: 10px;
     color: #608AFD;
     letter-spacing: -3px;
+    @media (max-width: 1203px) {
+      height: 100vh;
+      width: 100%;
+    }
   }
   .intro-text p {
     font-size: 20px;
     font-weight: 300;
     margin-bottom: 30px;
     color: #ddd;
+    @media (max-width: 1203px) {
+      height: 100vh;
+      width: 100%;
+    }
   }
   .intro-text a {
     background: #fff;
@@ -85,6 +96,10 @@ const HeaderContainer = styledComponents.header`
     display: inline-block;
     padding: 10px 30px;
     text-decoration: none;
+    @media (max-width: 1203px) {
+      height: 100vh;
+      width: 100%;
+    }
   }
   .intro-text a:hover {
     background: #000;
