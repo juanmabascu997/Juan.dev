@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import styled from 'styled-components'
 import emailjs from 'emailjs-com'
 // YOUR_SERVICE_ID = service_ld5sl55
 // YOUR_TEMPLATE_ID = template_6sfz2g9
@@ -36,7 +37,7 @@ export const Contact = (props) => {
   }
   return (
     <div>
-      <div id='contact'>
+      <Container id='contact'>
         <div className='container'>
           <div className='col-md-8'>
             <div className='row'>
@@ -138,12 +139,29 @@ export const Contact = (props) => {
                       <i className='fa fa-linkedin'></i>
                     </a>
                   </li>
+                  <li>
+                    <a href={props.element ? props.element.instagram : '/'} target="_blank" rel="noopener noreferrer">
+                      <i className='fa fa-instagram'></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href={props.element ? props.element.github : '/'} target="_blank" rel="noopener noreferrer">
+                      <i className='fa fa-github'></i>
+                    </a>
+                  </li>
                 </ul>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </Container>
     </div>
   )
 }
+
+
+const Container = styled.div`
+    background: linear-gradient(to right, #3b3b3b  5%,  #1E1E1E 100%);
+    background-size: cover;
+    background-position: center;  
+`

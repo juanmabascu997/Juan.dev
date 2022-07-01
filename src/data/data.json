@@ -4,18 +4,18 @@
     "paragraph": "Hi! Im Juan, and this is my portfolio webside"
   },
   "About": {
-    "paragraph": "I am a 25-year-old Argentine from the city of San Luis. I am an electronic technician with knowledge of C and C++. After my academic training, I began my foray into the world of web development. Get started with CSS, HTML, and Bootstrap courses. Then continue with UX UI design, Figma, and layout development for web pages and applications. Finally, I took a full stack programming bootcamp, with more than 800 hours of programming and more than 4 projects carried out during the course",
+    "paragraph": "I am a 25-year-old developer from San Luis, Argentina. I consider myself an adaptable, active, persistent and proactive; someone who focuses on a task and executes it effectively. I adapt easily to teamwork and their goals. I constantly look for continuous growth and to keep increasing my knowledge.",
     "Why": [
-      "Good predisposition in lerning",
+      "Good work predisposition",
       "Dedicated",
-      "Disposition in relocation if this is a requisit",
+      "Availability in relocation if this is a requisite",
       "Full time disposition"
     ],
     "Why2": [
-      "English speker",
+      "Conversational English",
       "Team worker",
-      "Striving",
-      "Persistent"
+      "Adaptable",
+      "Persistant"
     ]
   },
   "Gallery": [
@@ -75,7 +75,16 @@
       "largeImage": "img/portfolio/7.png",
       "smallImage": "img/portfolio/7.png",
       "technology": "HTLM, CSS, JavaScript, Styled Components, React, Redux",
-      "description": "Landing created for a fictitious electronic currency using React, Redux, and Styled Components. I used the CoinMarketCap API to get the coin data."
+      "description": "Landing created for a fictitious electronic currency using React, Redux, and Styled Components."
+    },
+
+    {
+      "title": "YourJob",
+      "largeImage": "img/portfolio/8.png",
+      "smallImage": "img/portfolio/8.png",
+      "url": "https://your-job-seven.vercel.app/",
+      "technology": "HTLM, CSS, JavaScript, Styled Components, React, Redux, PostgreSQL, Heroku, Vercel, Bootstrap, Firebase, Stripe, Socket.io",
+      "description": "A social network for job seekers. Worked with scrum methodology, and realtime database payment."
     }
   ],
 
@@ -124,15 +133,32 @@
       "icon": "Styled Components",
       "name": "Styled Components",
       "text": "Use the best bits of ES6 and CSS to style your apps without stress."
+    },
+    {
+      "icon": "Firebase",
+      "name": "Firebase",
+      "text": "Is a cloud-hosted, NoSQL database that your Apple, Android, and web apps can access directly via native SDKs"
+    },
+    {
+      "icon": "Stripe.js",
+      "name": "Stripe.js",
+      "text": "Stripe is a suite of APIs powering online payment processing and commerce solutions for internet businesses of all sizes."
+    },
+    {
+      "icon": "Bootsrap",
+      "name": "Bootsrap",
+      "text": "Bootstrap is a free and open-source toolkit for developing with HTML, CSS, and JS."
     }
   ],
 
   "Contact": {
     "address": "San Luis, Argentina",
-    "phone": "+54 9 266 4554548",
+    "phone": "+54 266 4554548",
     "email": "jmb972012@gmail.com",
     "facebook": "https://www.facebook.com/profile.php?id=100008957589786",
-    "linkedin": "https://www.linkedin.com/in/juan-manuel-bascunan-3b0355169"
+    "linkedin": "https://www.linkedin.com/in/juan-manuel-bascunan-3b0355169",
+    "instagram": "https://www.instagram.com/juanmabascu/?hl=es-la",
+    "github": "https://github.com/juanmabascu997"
   },
   "Features": [
     {
@@ -154,6 +180,23 @@
       "img": "4",
       "title": "Movies App",
       "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+    }
+  ],
+  "Certificates":[
+    {
+      "img": "img/certificates/1.png",
+      "title": "FullStack Developer",
+      "academy": "SoyHenry"
+    },
+    {
+      "img": "img/certificates/2.jpg",
+      "title": "Master in CSS, and HTML",
+      "academy": "Udemy"
+    },
+    {
+      "img": "img/certificates/3.png",
+      "title": "UX/UI Design",
+      "academy": "Digitalmind"
     }
   ]
 }

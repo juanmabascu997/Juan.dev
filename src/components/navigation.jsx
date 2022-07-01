@@ -5,7 +5,8 @@ import { Gallery } from "./gallery"
 import { Contact } from "./contact"
 import JsonData from "../data/data.json";
 import { useState, useEffect } from "react";
-import styledComponents from "styled-components"
+import styled from "styled-components"
+import { Certificates } from "./certificates"
 
 
 export const Navigation = () => {
@@ -58,6 +59,11 @@ export const Navigation = () => {
                 </a>
               </li>
               <li>
+                <a href='#certificates'>
+                  Certificates
+                </a>
+              </li>
+              <li>
                 <a href='#contact'>
                   Contact
                 </a>
@@ -70,13 +76,14 @@ export const Navigation = () => {
       <Gallery element={landingPageData.Gallery}/>
       <About element={landingPageData.About}/>
       <Services element={landingPageData.Services}/>
+      <Certificates element={landingPageData.Certificates}/>
       <Contact element={landingPageData.Contact}/>
    </div>
   )
 }
 
 
-const Logo = styledComponents.h1`
+const Logo = styled.h1`
   font-size: 60px;
   font-weight: 700;
   margin-bottom: 10px;
@@ -84,13 +91,13 @@ const Logo = styledComponents.h1`
   letter-spacing: -3.2px;
 
 `
-const Dev = styledComponents.h1`
+const Dev = styled.h1`
   font-size: 30px;
   font-weight: 700;
   color: #fff;
 `
 
-const NavName = styledComponents.div`
+const NavName = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;

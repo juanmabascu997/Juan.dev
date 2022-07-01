@@ -1,4 +1,4 @@
-import styledComponents from "styled-components"
+import styled from "styled-components"
 import React from 'react'
 
 export const  Header = (props) => {
@@ -29,7 +29,7 @@ export const  Header = (props) => {
   )
 }
 
-const HeaderContainer = styledComponents.header`
+const HeaderContainer = styled.header`
   .intro-text a{
     margin-bottom: 50px;
   }
@@ -57,11 +57,22 @@ const HeaderContainer = styledComponents.header`
     width: 70%;
     padding-top: 600px;
     text-align: center;
-    background: rgba(0, 0, 0, 0.1);
+    background: rgba(0, 0, 0, 0.5);
+    transition: all 300ms;
+
+    p{
+      background-color: rgba(0, 0, 0, 0.2);
+      color: #dddddd;
+      font-size: 24px;
+      font-weight: lighter;
+      margin-bottom: 30px;
+      @media (max-width: 1203px) {
+        height: 100vh;
+        width: 100%;
+      }
+    }
     &:hover{
-      transition: 2s ease-in-out all;
-      animation: shake 2s;
-      animation-iteration-count: infinite;
+      transform: translateY(-10px);
     }
     @media (max-width: 1203px) {
       height: 100vh;
@@ -79,16 +90,7 @@ const HeaderContainer = styledComponents.header`
       width: 100%;
     }
   }
-  .intro-text p {
-    font-size: 20px;
-    font-weight: 300;
-    margin-bottom: 30px;
-    color: #ddd;
-    @media (max-width: 1203px) {
-      height: 100vh;
-      width: 100%;
-    }
-  }
+
   .intro-text a {
     background: #fff;
     border: 2px solid #fff;

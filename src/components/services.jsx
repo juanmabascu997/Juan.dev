@@ -6,9 +6,11 @@ import { FaNodeJs } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { SiPostgresql } from "react-icons/si";
 import { FaFigma } from "react-icons/fa";
-import {SiStyledcomponents} from "react-icons/si";
+import {SiStyledcomponents, SiFirebase} from "react-icons/si";
+import { GrStripe } from "react-icons/gr";
+import { FaBootstrap } from "react-icons/fa";
 
-import styledComponents from "styled-components";
+import styled from "styled-components";
 
 export const Services = (props) => {
   return (
@@ -33,6 +35,9 @@ export const Services = (props) => {
                   d.icon==='Git' ? <FaGithub/>:
                   d.icon==='SQL' ? <SiPostgresql/>:
                   d.icon==='Figma' ? <FaFigma/>:
+                  d.icon==='Firebase' ? <SiFirebase/>:
+                  d.icon==='Stripe.js' ? <GrStripe/>:
+                  d.icon==='Bootsrap' ? <FaBootstrap/>:
                   d.icon==='Styled Components' ? <SiStyledcomponents/>
                   : null
                   }                  
@@ -49,7 +54,7 @@ export const Services = (props) => {
   )
 }
 
-const Card = styledComponents.div`
+const Card = styled.div`
   background-color: #222222;
   border-radius: 5px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
@@ -96,7 +101,7 @@ const Card = styledComponents.div`
   }
 `;
 
-const Row = styledComponents.div`
+const Row = styled.div`
   display: flex;
   flex-direction: row;
   width: 1200px;  
