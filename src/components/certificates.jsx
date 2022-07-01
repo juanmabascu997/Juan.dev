@@ -18,13 +18,13 @@ export const Certificates = (props) => {
 
             <div class="carousel-inner">
                 <div class="item active">
-                    <Img class="d-block w-100" src={props?.element[0].img} alt="First slide"/>
+                    <Img class="d-block w-100" src={props?props.element[0].img : ""} alt="First slide"/>
                 </div>
                 <div class="item">
-                    <Img class="d-block w-100" src={props?.element[1].img} alt="Second slide"/>
+                    <Img class="d-block w-100" src={props?props.element[1].img : ""} alt="Second slide"/>
                 </div>
                 <div class="item">
-                    <Img class="d-block w-100" src={props?.element[2].img} alt="Third slide"/>
+                    <Img class="d-block w-100" src={props?props.element[2].img : ""} alt="Third slide"/>
                 </div>
             </div>
 
