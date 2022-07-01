@@ -10,21 +10,27 @@ export const Certificates = (props) => {
             </div>
             <div id="myCarousel" class="carousel slide" data-ride="carousel">
 
-            <ol class="carousel-indicators">
+            {/* <ol class="carousel-indicators">
                 <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                 <li data-target="#myCarousel" data-slide-to="1"></li>
                 <li data-target="#myCarousel" data-slide-to="2"></li>
-            </ol>
+            </ol> */}
 
             <div class="carousel-inner">
                 <div class="item active">
-                    <Img class="d-block w-100" src={props?props.element[0].img : ""} alt="First slide"/>
+                    <Img class="d-block w-100" src={props.element?props.element[0].img : ""} alt="First slide"/>
+                    <Tittle>{props.element?props.element[0].academy : ""}</Tittle>
+                    <p>{props.element?props.element[0].title : ""}</p>
                 </div>
                 <div class="item">
-                    <Img class="d-block w-100" src={props?props.element[1].img : ""} alt="Second slide"/>
+                    <Img class="d-block w-100" src={props.element?props.element[1].img : ""} alt="Second slide"/>
+                    <Tittle>{props.element?props.element[1].academy : ""}</Tittle>
+                    <p>{props.element?props.element[1].title : ""}</p>
                 </div>
                 <div class="item">
-                    <Img class="d-block w-100" src={props?props.element[2].img : ""} alt="Third slide"/>
+                    <Img class="d-block w-100" src={props.element?props.element[2].img : ""} alt="Third slide"/>
+                    <Tittle>{props.element?props.element[2].academy : ""}</Tittle>
+                    <p>{props.element?props.element[2].title : ""}</p>
                 </div>
             </div>
 
