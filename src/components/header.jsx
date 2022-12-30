@@ -1,7 +1,10 @@
 import styled from "styled-components"
 import React from 'react'
+import {useSelector} from 'react-redux'
 
 export const  Header = (props) => {
+  const leng = useSelector(state => state.lenguaje)
+
   return (
     <HeaderContainer>
       <div className='intro'>
@@ -18,7 +21,7 @@ export const  Header = (props) => {
                   href='#contact'
                   className='btn btn-custom btn-lg page-scroll'
                 >
-                  Contact me
+                  {leng === "esp" ? "Contactame" : "Contact me" }
                 </a>{' '}
               </div>
             </div>
@@ -35,7 +38,6 @@ const HeaderContainer = styled.header`
   }
 
   .intro {
-    background: url(../img/unsplash.jpg) no-repeat center center;
     background-size: cover;
     height: 100vh;
     width: 100%;

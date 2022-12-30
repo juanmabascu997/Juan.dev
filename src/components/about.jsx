@@ -1,6 +1,9 @@
 import styled from "styled-components";
+import {useSelector} from 'react-redux'
 
 export const About = (props) => {
+  const leng = useSelector(state => state.lenguaje)
+
   return (
     <div id="about">
       <div className="container">
@@ -11,9 +14,13 @@ export const About = (props) => {
           </div>
           <div className="col-xs-12 col-md-6">
             <div className="about-text">
-              <h2 id="featuresH2">About me</h2>
+              <h2 id="featuresH2">
+                {leng === "esp" ? "Acerca de mi" : "About me" }
+              </h2>
               <p>{props.element ? props.element.paragraph : "loading..."}</p>
-              <h3 id="featuresH2">Why you should hire me?</h3>
+              <h3 id="featuresH2">
+                {leng === "esp" ? "Porque deberias contratarme?" : "Why you should hire me?" }
+              </h3>
               <div className="list-style">
                 <div className="col-lg-6 col-sm-6 col-xs-12">
                   <ul>

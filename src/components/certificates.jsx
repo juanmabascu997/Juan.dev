@@ -1,43 +1,46 @@
 import styled from "styled-components"
 import {BsArrowRightCircleFill, BsArrowLeftCircleFill} from "react-icons/bs"
+import {useSelector} from 'react-redux'
 
 export const Certificates = (props) => {
+  const leng = useSelector(state => state.lenguaje)
+
   return (
     <div id='certificates' className='text-center'>
         <Container className='container'>
             <div className='section-title'>
-                <Tittle>Certificates</Tittle>
+                <Tittle>
+                    {leng === "esp" ? "Certificados" : "Certificates" }       
+                </Tittle>
             </div>
-            <div id="myCarousel" class="carousel slide" data-ride="carousel">
-
-            {/* <ol class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="1"></li>
-                <li data-target="#myCarousel" data-slide-to="2"></li>
-            </ol> */}
-
-            <div class="carousel-inner">
-                <div class="item active">
-                    <Img class="d-block w-100" src={props.element?props.element[0].img : ""} alt="First slide"/>
-                    <Tittle>{props.element?props.element[0].academy : ""}</Tittle>
-                    <p>{props.element?props.element[0].title : ""}</p>
+            <div id="myCarousel" className="carousel slide" data-ride="carousel">
+                <div className="carousel-inner">
+                    <div className="item active">
+                        <Img className="d-block w-100" src={props.element?props.element[0].img : ""} alt="First slide"/>
+                        <Tittle>{props.element?props.element[0].academy : ""}</Tittle>
+                        <p>{props.element?props.element[0].title : ""}</p>
+                    </div>
+                    <div className="item">
+                        <Img className="d-block w-100" src={props.element?props.element[1].img : ""} alt="Second slide"/>
+                        <Tittle>{props.element?props.element[1].academy : ""}</Tittle>
+                        <p>{props.element?props.element[1].title : ""}</p>
+                    </div>
+                    <div className="item">
+                        <Img className="d-block w-100" src={props.element?props.element[2].img : ""} alt="Third slide"/>
+                        <Tittle>{props.element?props.element[2].academy : ""}</Tittle>
+                        <p>{props.element?props.element[2].title : ""}</p>
+                    </div>
+                    <div className="item">
+                        <Img className="d-block w-100" src={props.element?props.element[3].img : ""} alt="Four slide"/>
+                        <Tittle>{props.element?props.element[3].academy : ""}</Tittle>
+                        <p>{props.element?props.element[3].title : ""}</p>
+                    </div>
                 </div>
-                <div class="item">
-                    <Img class="d-block w-100" src={props.element?props.element[1].img : ""} alt="Second slide"/>
-                    <Tittle>{props.element?props.element[1].academy : ""}</Tittle>
-                    <p>{props.element?props.element[1].title : ""}</p>
-                </div>
-                <div class="item">
-                    <Img class="d-block w-100" src={props.element?props.element[2].img : ""} alt="Third slide"/>
-                    <Tittle>{props.element?props.element[2].academy : ""}</Tittle>
-                    <p>{props.element?props.element[2].title : ""}</p>
-                </div>
-            </div>
 
-            <BottonsLefth class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <BottonsLefth className="left carousel-control" href="#myCarousel" data-slide="prev">
                 <BsArrowLeftCircleFill/>
             </BottonsLefth>
-            <BottonsRight class="right carousel-control" href="#myCarousel" data-slide="next">
+            <BottonsRight className="right carousel-control" href="#myCarousel" data-slide="next">
                 <BsArrowRightCircleFill/>
             </BottonsRight>
             </div>

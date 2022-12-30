@@ -1,9 +1,16 @@
+import {useSelector} from 'react-redux'
+
 export const Features = (props) => {
+  const leng = useSelector(state => state.lenguaje)
+
   return (
     <div id='features' className='text-center'>
       <div className='container'>
         <div className='col-md-10 col-md-offset-1 section-title'>
-          <h2 id="featuresH2">Projects</h2>
+          <h2 id="featuresH2">
+            {leng === "esp" ? "Proyectos" : "Projects" }       
+            
+          </h2>
         </div>
         <div id="featuresImgs" className='row'>
           {props.data

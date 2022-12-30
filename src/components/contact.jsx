@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import styled from 'styled-components'
 import emailjs from 'emailjs-com'
+import {useSelector} from 'react-redux'
+
 // YOUR_SERVICE_ID = service_ld5sl55
 // YOUR_TEMPLATE_ID = template_6sfz2g9
 // YOUR_USER_ID = F-jlerFc9kQmnHiSA
@@ -11,6 +13,7 @@ const initialState = {
 }
 export const Contact = (props) => {
   const [{ name, email, message }, setState] = useState(initialState)
+  const leng = useSelector(state => state.lenguaje)
   
   const handleChange = (e) => {
     const { name, value } = e.target
@@ -42,10 +45,11 @@ export const Contact = (props) => {
           <div className='col-md-8'>
             <div className='row'>
               <div className='section-title'>
-                <h2>Get In Touch</h2>
+                <h2>
+                  {leng === "esp" ? "Pongamosnos en contacto" : "Get In Touch" }       
+                </h2>
                 <p>
-                  Please fill out the form below to send us an email and we will
-                  get back to you as soon as possible.
+                  {leng === "esp" ? "Por favor, llena el formulario a continuacion para ponerme en contacto en cuanto pueda." : "Please fill out the form below to send us an email and we will get back to you as soon as possible." }       
                 </p>
               </div>
               <form name='sentMessage' validate onSubmit={handleSubmit}>
@@ -93,17 +97,19 @@ export const Contact = (props) => {
                 </div>
                 <div id='success'></div>
                 <button type='submit' className='btn btn-custom btn-lg'>
-                  Send Message
+                  {leng === "esp" ? "Enviar" : "Send Message" }                         
                 </button>
               </form>
             </div>
           </div>
           <div className='col-md-3 col-md-offset-1 contact-info'>
             <div className='contact-item'>
-              <h3>Contact Info</h3>
+              <h3>
+                {leng === "esp" ? "Info de contacto" : "Contact Info" }                         
+              </h3>
               <p>
                 <span>
-                  <i className='fa fa-map-marker'></i> Address
+                  <i className='fa fa-map-marker'></i> {leng === "esp" ? "Domicilo" : "Address" }                         
                 </span>
                 {props.element ? props.element.address : 'loading'}
               </p>
@@ -111,7 +117,7 @@ export const Contact = (props) => {
             <div className='contact-item'>
               <p>
                 <span>
-                  <i className='fa fa-phone'></i> Phone
+                  <i className='fa fa-phone'></i> {leng === "esp" ? "Telefono" : "Phone" } 
                 </span>{' '}
                 {props.element ? props.element.phone : 'loading'}
               </p>

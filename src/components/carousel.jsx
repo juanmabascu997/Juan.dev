@@ -1,7 +1,9 @@
 import styled from 'styled-components'
 import React from 'react'
+import {useSelector} from 'react-redux'
 
 const Carousel = ({images}) => {
+    const leng = useSelector(state => state.lenguaje)
 
 
     return (
@@ -9,58 +11,58 @@ const Carousel = ({images}) => {
         <Slider className='slider'>
             {images? <>
                 <div>
-                    <img src={images[5].largeImage}/>
+                    <img alt='other' src={images[5].largeImage}/>
                     <h1>{images[5].title}</h1>
-                    <p>Technologies:{images[5].technology}</p>
+                    <p>{leng === "esp" ? "Tecnologias" : "Technologies" }:{images[5].technology}</p>
                     <p>{images[5].description}</p>
                     {images[5].url? <Button href={images[5].url} target="_blank" rel="noopener noreferrer">Deploy</Button>: ''}
                 </div>
                 <div>
-                    <img src={images[7].largeImage}/>
+                    <img alt='other' src={images[7].largeImage}/>
                     <h1>{images[7].title}</h1>
-                    <p>Technologies:{images[7].technology}</p>
+                    <p>{leng === "esp" ? "Tecnologias" : "Technologies" }:{images[7].technology}</p>
                     <p>{images[7].description}</p>
                     {images[7].url? <Button href={images[7].url} target="_blank" rel="noopener noreferrer">Deploy</Button>: ''}
                 </div>
                 <div>
-                    <img src={images[3].largeImage} />
+                    <img alt='other' src={images[3].largeImage} />
                     <h1>{images[3].title}</h1>
-                    <p>Technologies:{images[3].technology}</p>
+                    <p>{leng === "esp" ? "Tecnologias" : "Technologies" }:{images[3].technology}</p>
                     <p>{images[3].description}</p>
                     {images[3].url? <Button href={images[3].url} target="_blank" rel="noopener noreferrer">Deploy</Button>: ''}
                 </div>
                 <div>
-                    <img src={images[4].largeImage}/>
+                    <img alt='other' src={images[4].largeImage}/>
                     <h1>{images[4].title}</h1>
-                    <p>Technologies:{images[4].technology}</p>
+                    <p>{leng === "esp" ? "Tecnologias" : "Technologies" }:{images[4].technology}</p>
                     <p>{images[4].description}</p>
                     {images[4].url? <Button href={images[4].url} target="_blank" rel="noopener noreferrer">Deploy</Button>: ''}
                 </div>
                 <div>
-                    <img src={images[6].largeImage}/>
+                    <img alt='other' src={images[6].largeImage}/>
                     <h1>{images[6].title}</h1>
-                    <p>Technologies:{images[6].technology}</p>
+                    <p>{leng === "esp" ? "Tecnologias" : "Technologies" }:{images[6].technology}</p>
                     <p>{images[6].description}</p>
                     {images[6].url? <Button href={images[6].url} target="_blank" rel="noopener noreferrer">Deploy</Button>: ''}
                 </div>
                 <div>
-                    <img src={images[0].largeImage}/>
+                    <img alt='other' src={images[0].largeImage}/>
                     <h1>{images[0].title}</h1>
-                    <p>Technologies:{images[0].technology}</p>
+                    <p>{leng === "esp" ? "Tecnologias" : "Technologies" }:{images[0].technology}</p>
                     <p>{images[0].description}</p>
                     {images[0].url? <Button href={images[0].url} target="_blank" rel="noopener noreferrer">Deploy</Button>: ''}
                 </div>
                 <div>
-                    <img src={images[1].largeImage}/>
+                    <img alt='other' src={images[1].largeImage}/>
                     <h1>{images[1].title}</h1>
-                    <p>Technologies:{images[1].technology}</p>
+                    <p>{leng === "esp" ? "Tecnologias" : "Technologies" }:{images[1].technology}</p>
                     <p>{images[1].description}</p>
                     {images[1].url? <Button href={images[1].url} target="_blank" rel="noopener noreferrer">Deploy</Button>: ''}
                 </div>
                 <div>
-                    <img src={images[2].largeImage}/>
+                    <img alt='other' src={images[2].largeImage}/>
                     <h1>{images[2].title}</h1>
-                    <p>Technologies:{images[2].technology}</p>
+                    <p>{leng === "esp" ? "Tecnologias" : "Technologies" }:{images[2].technology}</p>
                     <p>{images[2].description}</p>
                     {images[2].url? <Button href={images[2].url} target="_blank" rel="noopener noreferrer">Deploy</Button>: ''}
                 </div>

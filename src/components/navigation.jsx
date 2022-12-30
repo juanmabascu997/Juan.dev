@@ -3,18 +3,39 @@ import { Services } from "./services"
 import { Header } from "./header"
 import { Gallery } from "./gallery"
 import { Contact } from "./contact"
-import JsonData from "../data/data.json";
+import { Certificates } from "./certificates"
+
+import { setLenguaje } from "../redux/actions/actions"
+import { useDispatch } from 'react-redux';
+
+import JsonDataEng from "../data/data.json";
+import JsonDataEsp from "../data/data-esp.json";
+
 import { useState, useEffect } from "react";
 import styled from "styled-components"
-import { Certificates } from "./certificates"
+import { MdGTranslate } from "react-icons/md";
 
 
 export const Navigation = () => {
   const [landingPageData, setLandingPageData] = useState({});
+  const dispatch = useDispatch();
+
+
   useEffect(() => {
-    setLandingPageData(JsonData);
+    setLandingPageData(JsonDataEng);
   }, []);
 
+  useEffect(() => {
+    setLenguaje(landingPageData).then(res => {
+      dispatch(res);
+    })
+  }, [landingPageData]);
+
+  function changeLenguaje() {
+
+    if(landingPageData === JsonDataEsp) setLandingPageData(JsonDataEng)
+    else if (landingPageData === JsonDataEng) setLandingPageData(JsonDataEsp)
+  }
 
   return (
     <div>
@@ -45,28 +66,33 @@ export const Navigation = () => {
             <ul className='nav navbar-nav navbar-right'>
               <li>
                 <a href='#portfolio'>
-                  Projects
+                  {landingPageData?.Tittles?.Gallery}
                 </a>
               </li>
               <li>
                 <a href='#about'>
-                  About
+                  {landingPageData?.Tittles?.About}
                 </a>
               </li>
               <li>
                 <a href='#services'>
-                  Services
+                  {landingPageData?.Tittles?.Services}
                 </a>
               </li>
               <li>
                 <a href='#certificates'>
-                  Certificates
+                  {landingPageData?.Tittles?.Certificates}
                 </a>
               </li>
               <li>
                 <a href='#contact'>
-                  Contact
+                  {landingPageData?.Tittles?.Contact}
                 </a>
+              </li>
+              <li>
+                <Button onClick={changeLenguaje}>
+                  <MdGTranslate />
+                </Button>
               </li>
             </ul>
           </div>
@@ -106,3 +132,11 @@ const NavName = styled.div`
   color: #fff;
   margin-bottom: 10px;
 `
+const Button = styled.button`
+  padding-right: 0px;
+  margin-left: 50px;
+  background-color: inherit;
+  border: none;
+  font-size: 40px;
+`
+ 
